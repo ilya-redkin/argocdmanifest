@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  labels:
+    app: memory-game
+  name: memory-game
+  namespace: memory-game
+spec:
+  port:
+    targetPort: 3000
+  to:
+    kind: Service
+    name: memory-game
+    weight: 100
