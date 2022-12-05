@@ -18,7 +18,7 @@ spec:
         app: memory-game
     spec:
       containers:
-        - image: iredkin/pro690image:72
+        - image: iredkin/pro690image:73
           name: memory-game
           resources: {}
 status: {}
